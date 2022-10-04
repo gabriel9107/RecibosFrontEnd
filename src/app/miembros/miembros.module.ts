@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '../material/material.module';
 import { MiembrosRoutingModule } from './miembros-routing.module';
@@ -21,8 +22,8 @@ import { MiembrosComponent } from './pages/miembros/miembros.component';
     MiembrosComponent
   ],
   imports: [
-    CommonModule, 
-    MiembrosRoutingModule, MaterialModule
+    CommonModule,
+    MiembrosRoutingModule, MaterialModule, FlexLayoutModule
   ]
 })
 export class MiembrosModule { }
